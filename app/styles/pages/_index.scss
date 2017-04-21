@@ -516,6 +516,11 @@ a {
   position: relative;
   background: #000e1c;
 
+  .section_inner {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
   .owl-prev {
      position: absolute;
      top: 0;

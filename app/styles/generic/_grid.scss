@@ -208,15 +208,6 @@
     width: 100%;
   }*/
 
-  .col-s{
-    display: block;
-    float: left;
-    margin-left: 2%;
-  }
-  .col-s:first-child, .col-s.first-child-s{
-    margin-left: 0;
-  }
-
 
   .span1-sm { width: 6.5%; }
   .span2-sm { width: 15.0%; }
@@ -271,6 +262,8 @@
   .col-s:first-child, .col-s.first-child-s{
     margin-left: 0;
   }*/
+
+
   .span1-s { width: 6.5%; }
   .span2-s { width: 15.0%; }
   .span3-s { width: 23.5%; }
@@ -287,6 +280,16 @@
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
+  .col-s{
+    display: block;
+    float: left;
+    margin-left: 2%;
+  }
+  .col-s:first-child, .col-s.first-child-s{
+    margin-left: 0;
+  }
+
+
   .span1 { width: 6.5%; }
   .span2 { width: 15.0%; }
   .span3 { width: 23.5%; }

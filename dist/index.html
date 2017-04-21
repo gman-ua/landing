@@ -10,16 +10,17 @@
   <!-- Place favicon.ico in the root directory -->
 
   
-
   <link rel="stylesheet" href="styles/main.css">
 
   <script src="scripts/vendor/modernizr.js"></script>
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
 </head>
 <body>
 <div class="container">
 
-  <header class="row header">
-    <div class="section_inner">
+  <header class="row header" id="particles-js">
+    <div class="row section_inner">
       <div class="row menu-wrap">
         <a href="#" class="header-logo">
           <img src="images/logo.svg" alt="EXMO logotype">
@@ -84,8 +85,8 @@
 
           <div class="row header-reg-wrap">
             <form action="#" class="header-reg">
-              <input type="text" class="header-reg--input" placeholder="YOUR EMAIL">
-              <button href="#" class="header-reg--btn">Create an account</button>
+              <input type="text" class="header-reg-input" placeholder="YOUR EMAIL">
+              <button href="#" class="header-reg-btn">Create an account</button>
             </form>
           </div>
         </div>
@@ -114,7 +115,7 @@
 
 
     <div class="row graph_indexes">
-      <div class="section_inner">
+      <div class="row section_inner">
         <div class="owl-carousel graph-carousel">
           <div class="item">
             <div class="pair_item">BTC/USD</div>
@@ -176,7 +177,7 @@
   </div>
 
   <div class="row graph">
-    <div class="section_inner">
+    <div class="row section_inner">
       <div class="row graph-wrap">
         <div class="row block-title">
           Bitcoin price charts
@@ -214,7 +215,7 @@
 
 
   <div class="row accept-wrap">
-    <div class="section_inner">
+    <div class="row section_inner">
       <div class="row accept">
         <div class="row accept-title">Accept Bitcoin Payments and Expand Your Business</div>
         <div class="row accept-text">
@@ -230,11 +231,14 @@
   </div>
 
 
-  <div class="row reasons-wrap">
-    <div class="section_inner">
-      <div class="row reasons">
+  <div class="row reasons">
+    <div class="row section_inner">
+      <div class="row block-title">
+        Six reasons to choose EXMO
+      </div>
+      <div class="row reasons-wrap">
 
-        <div class="col span6-sm span4">
+        <div class="col span6-sm span4 reason-1">
           <div class="reason-item comission ">
             <div class="reason-item-title">
               Lowest Comissions
@@ -246,7 +250,7 @@
           </div>
         </div>
 
-        <div class="col span6-sm span4">
+        <div class="col span6-sm span4 reason-2">
           <div class="reason-item secure">
             <div class="reason-item-title">
               Secure Wallets
@@ -257,7 +261,7 @@
           </div>
         </div>
 
-        <div class="col span6-sm span4">
+        <div class="col span6-sm span4 reason-3">
           <div class="reason-item algorithmic ">
             <div class="reason-item-title">
               Algorithmic trading
@@ -269,7 +273,7 @@
           </div>
         </div>
 
-        <div class="col span6-sm span4">
+        <div class="col span6-sm span4 reason-4">
           <div class="reason-item payment">
             <div class="reason-item-title">
               Payment options
@@ -281,7 +285,7 @@
           </div>
         </div>
 
-        <div class="col span6-sm span4">
+        <div class="col span6-sm span4 reason-5">
           <div class="reason-item support">
             <div class="reason-item-title">
               Support 24/7
@@ -293,7 +297,7 @@
           </div>
         </div>
 
-        <div class="col span6-sm span4">
+        <div class="col span6-sm span4 reason-6">
           <div class="reason-item service">
             <div class="reason-item-title">
               Fast service
@@ -308,8 +312,11 @@
     </div>
   </div>
 
+  <div class="row reviews">
+    <div class="row section_inner">
 
-  <div class="section_inner">
+      <div class="row block-title">Bitcoin Influencers about EXMO</div>
+
       <div class="owl-carousel reviews-carousel">
 
         <div class="item">
@@ -406,10 +413,12 @@
 
       </div>
 
+    </div>
   </div>
 
+
   <div class="row reg-count">
-    <div class="section_inner">
+    <div class="row section_inner">
       <div class="row reg-count-wrap">
         <div class="row reg-count-title">402,809</div>
         <div class="row reg-count-subtitle">people trust in over 200 countries</div>
@@ -418,11 +427,32 @@
   </div>
 
 
-  <div class="section_inner">
+  <div class="row section_inner">
     <div class="row blog">
       <div class="block-title">Read EXMO blog</div>
       <div class="row blog-body">
-        <div class="col span12-xs">
+        <div class="col blog-post desktop-1200">
+            <div class="row blog-post-title">
+              EXMO adds withdrawal to Visa/MasterCard in EUR & USD
+            </div>
+          <div class="row blog-post-tags">
+            <div class="blog-tag-item item-fees">free changes</div>
+            <div class="blog-tag-item item-updates">updates</div>
+            <div class="blog-tag-item item-social">social</div>
+            <div class="blog-tag-item item-events">events</div>
+            <div class="blog-tag-item item-other">other</div>
+          </div>
+
+          <div class="row blog-post-text">
+            EXMO continues to connect new payment systems for better user experience. Now EXMO users can make funds withdrawal to Visa/MasterCard in EUR or USD. To start working with Visa/MasterCard, please follow the verification process in the user profile, after verification you will be able to make withdrawals in EUR and USD.
+          </div>
+          
+          <div class="row">
+            <a href="#" class="blog-post-btn">Read full article</a>
+          </div> 
+        </div>
+
+        <div class="col blog-list">
           <div class="row blog-item">
             <div class="blog-item-date"><span>22.03</span></div>
             <div class="blog-item-link"><a href="">EXMO adds withdrawal to Visa/Mastercard in EUR & USD</a></div>
@@ -460,7 +490,7 @@
   </div>
 
   <div class="row content-account">
-    <div class="section_inner">
+    <div class="row section_inner">
       <div class="row content-account-wrap">
         <div class="row account-title">
           Just open account. For free.<br>
@@ -478,10 +508,10 @@
 
 
   <footer class="row footer">
-    <div class="section_inner">
+    <div class="row section_inner">
       <div class="row footer_head">
 
-        <div class="col span12-xs span6-s footer-head-block-1">
+        <div class="col span5-sm footer-head-block-1">
           <a href="#" class="footer_logo"></a>
 
           <div class="user_default_lang">
@@ -503,7 +533,7 @@
           </div>
         </div>
 
-        <div class="col span12-xs span6-s footer-head-block-2">
+        <div class="col span7-sm footer-head-block-2">
           <div class="footer_head_text">
             <div class="footer_head_text_1">
               <span class="white_text">48,002</span> <span class="gray_text">Exmo members</span>
@@ -517,7 +547,7 @@
       </div>
 
       <div class="row footer_body gray_text">
-        <div class="col span12-xs span3">
+        <div class="footer_soc_block">
           <div class="row footer_menu_title" id="soc-med">Подписывайтесь на нас</div>
           <div class="row soc_med" id="soc-med-list">
             <ul class="soc_med_list">
@@ -528,8 +558,8 @@
           </div>
 
         </div>
-        <div class="col span12-xs span12-sm span9">
-          <div class="col span12-xs span6-sm span3">
+        <div class="footer_menu_block">
+          <div class="col-s span3-sm span3">
             <div class="row footer_menu_title" id="footer-1">Продукты</div>
             <div class="row footer-1-list" id="footer-1-list">
               <ul class="footer_menu_1">
@@ -540,7 +570,7 @@
             </div>
           </div>
 
-          <div class="col span12-xs span6-sm span3">
+          <div class="col-s span3-sm span3">
             <div class="row footer_menu_title" id="footer-2">Информация</div>
             <div class="row footer-2-list" id="footer-2-list">
               <ul class="footer_menu_2">
@@ -553,7 +583,7 @@
             </div>
           </div>
 
-          <div class="col span12-xs span6-sm span3">
+          <div class="col-s span3-sm span3">
             <div class="row footer_menu_title" id="footer-3">Компания</div>
             <div class="row footer-3-list" id="footer-3-list">
               <ul class="footer_menu_3">
@@ -565,7 +595,7 @@
             </div>
           </div>
 
-          <div class="col span12-xs span6-sm span3">
+          <div class="col-s span3-sm span3">
             <div class="row footer_menu_title" id="footer-4">Документы</div>
             <div class="row footer-4-list" id="footer-4-list">
               <ul class="footer_menu_4">
@@ -584,7 +614,7 @@
 
 
     <div class="row footer_bottom">
-      <div class="section_inner">
+      <div class="row section_inner">
         <div class="footer_bottom_text1">
           All rights reserved, EXMO FINANCE LLP, 2017
         </div>

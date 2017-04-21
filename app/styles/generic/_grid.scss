@@ -191,14 +191,7 @@
 
 
   !*mobile grid*!
-  .col-s{
-    display: block;
-    float: left;
-    margin-left: 2%;
-  }
-  .col-s:first-child, .col-s.first-child-s{
-    margin-left: 0;
-  }
+
 
   .span1-s,
   .span2-s,
@@ -214,6 +207,15 @@
   .span12-s{
     width: 100%;
   }*/
+
+  .col-s{
+    display: block;
+    float: left;
+    margin-left: 2%;
+  }
+  .col-s:first-child, .col-s.first-child-s{
+    margin-left: 0;
+  }
 
 
   .span1-sm { width: 6.5%; }

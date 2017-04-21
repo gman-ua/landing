@@ -1,0 +1,47 @@
+// Typography
+$base-font-size: 13px;
+
+//Fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,500,700&subset=cyrillic,cyrillic-ext');
+$roboto: 'Roboto', sans-serif;
+$icon-font-path: '../fonts/';
+
+// # Colors
+$blue: #347ffb;
+$blue_active: #216be3;
+$blue_dark: #272736;
+$blue_dark2: #2e2e3f;
+$blue_dark3: #303042;
+$blue_dark4: #3b3b4c;
+$blue_dark5: #2c2c3c;
+$blue_light: #b0c7ef;
+$red: #f12644;
+$red_light: #fab3be;
+$red2: #ff5a6a;
+$red_light: #fae6e8;
+$gray: #edeff2;
+$gray_light: #f7f7f7;
+$gray_inactive: #c3ced6;
+$gray_inactive_ver: #8b929b;
+$gray_disabled_ver: #dddfe1;
+$gray_form_ver: #dee2e7;
+$gray_midle: #9299a1;
+$gray_text: #8a919a;
+$gray_text2: #718493;
+$black: #181818;
+$black_hint: #2f2f3e;
+$black_footer: #252533;
+$white: #ffffff;
+$green: #00ff9c;
+
+$status_green: #26a458;
+$status_gray: #d2d2d2;;
+$status_red: $red;
+
+//Background
+
+
+
+
+
+

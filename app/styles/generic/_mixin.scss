@@ -1,0 +1,70 @@
+@mixin sprite($x, $y) {
+  background: url(../images/sprite.svg) no-repeat;
+  background-size: 160px 280px;
+  background-position: $x $y;
+}
+
+@mixin langs($x, $y) {
+  background: url("../images/langs.png") no-repeat;
+  background-size: 15px 100px;
+  background-position: $x $y;
+}
+
+@mixin info_icons($x, $y) {
+  background: url("../images/info_icons.svg") no-repeat;
+  background-size: 200px 100px;
+  background-position: $x $y;
+}
+
+
+
+@mixin bg-color-an {
+  transition: background-color 0.2s ease;
+}
+
+@mixin hover-an {
+  transition: opacity  0.2s ease;
+}
+
+@mixin title_small() {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+@mixin hover-active {
+  &:hover {
+    background: $blue !important;
+    color: $white !important;
+    text-decoration: none;
+  }
+
+  &:active {
+    background: $blue_active !important;
+    color: $white !important;
+  }
+}
+
+@mixin input-focus {
+  &:focus {
+    border-color: $blue;
+    color: $blue;
+  }
+}
+
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}
+}
+
+@mixin transition($in) {
+  transition:$in;
+  -webkit-transition:$in;
+  -moz-transition:$in;
+  -o-transition:$in;
+  -ms-transition:$in;
+}
+

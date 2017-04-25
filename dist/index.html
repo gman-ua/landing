@@ -15,167 +15,193 @@
   <script src="scripts/vendor/modernizr.js"></script>
   <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
-
 </head>
 <body>
 <div class="container">
 
-  <header class="row header" id="particles-js">
-    <div class="row section_inner">
-      <div class="row menu-wrap">
-        <a href="#" class="header-logo">
-          <img src="images/logo.svg" alt="EXMO logotype">
-        </a>
+  <div class="fullpage" id="hero">
+
+    <div class="content">
+      <header class="row header" id="particles-js">
+        <div class="row section_inner">
+          <div class="row menu-wrap">
+            <a href="#" class="header-logo">
+              <img src="images/logo.svg" alt="EXMO logotype">
+            </a>
 
 
-        <nav class="nav" id="main-nav">
-          <ul class="menu">
-            <li><a href="#">Exchange</a></li>
-            <li><a href="#">Buy &amp; Sell</a></li>
-            <li><a href="#">Affiliate Program</a></li>
-            <li><a href="#">Support &amp; Help</a></li>
-            <li class="mobile"><a href="#">Authorization</a></li>
-            <li class="mobile"><a href="#">Registration</a></li>
-          </ul>
-        </nav>
-
-        <div class="user_default desktop-1200">
-          <div class="user_default_lang">
-            <div class="user_default_lang_active uk">UA</div>
-            <div class="user_default_lang_drop">
-              <ul class="lang_list">
-                <li><a href="#" class="en">English</a></li>
-                <li><a href="#" class="es">Español</a></li>
-                <li><a href="#" class="fr">Français</a></li>
-                <li><a href="#" class="de">Deutsch</a></li>
-                <li><a href="#" class="it">Italiano</a></li>
-                <li><a href="#" class="pt">Português</a></li>
-                <li><a href="#" class="ro">Română</a></li>
-                <li><a href="#" class="zh">中文</a></li>
-                <li><a href="#" class="ru">Русский</a></li>
-                <li><a href="#" class="uk">Українська</a></li>
+            <nav class="nav" id="main-nav">
+              <ul class="menu">
+                <li><a href="#">Exchange</a></li>
+                <li><a href="#">Buy &amp; Sell</a></li>
+                <li><a href="#">Affiliate Program</a></li>
+                <li><a href="#">Support &amp; Help</a></li>
+                <li class="mobile"><a href="#">Authorization</a></li>
+                <li class="mobile"><a href="#">Registration</a></li>
               </ul>
+            </nav>
+
+            <div class="lang-reg-block">
+              <div class="user_default">
+                <div class="user_default_lang">
+                  <div class="user_default_lang_active uk">UA</div>
+                  <div class="user_default_lang_drop">
+                    <ul class="lang_list">
+                      <li><a href="#" class="en">English</a></li>
+                      <li><a href="#" class="es">Español</a></li>
+                      <li><a href="#" class="fr">Français</a></li>
+                      <li><a href="#" class="de">Deutsch</a></li>
+                      <li><a href="#" class="it">Italiano</a></li>
+                      <li><a href="#" class="pt">Português</a></li>
+                      <li><a href="#" class="ro">Română</a></li>
+                      <li><a href="#" class="zh">中文</a></li>
+                      <li><a href="#" class="ru">Русский</a></li>
+                      <li><a href="#" class="uk">Українська</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+                <a href="#" class="btn_header btn_authorization">Авторизация</a>
+                <a href="#" class="btn_header btn_registration">Регистрация</a>
+            </div>
+
+
+
+            <div class="hamburger hamburger--slider" id="hamburger">
+              <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="row header-center">
+            <div class="header-center-wrap">
+              <div class="row header-title-wrap">
+                <div class="header-title">
+                  It has never been so easy
+                </div>
+
+                <div class="header-subtitle">
+                  to use Bitcoin
+                </div>
+              </div>
+
+              <div class="row header-reg-wrap">
+                <form action="#" class="header-reg">
+                  <input type="text" class="header-reg-input" placeholder="YOUR EMAIL">
+                  <button href="#" class="header-reg-btn">Create an account</button>
+                </form>
+
+                <div class="form-marker-wrap">
+                  <div class="pulse-container">
+                    <div class="pulse-box">
+                      <div class="pulse-css">
+                        <div class="pulse-dot"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-hint">
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </header>
+
+      <div class="info-indexes">
+        <div class="row info-wrap">
+          <div class="col span4-xs info-item">
+            <div class="info-text">bitcoin change</div>
+            <div class="info-value">+27.58%</div>
+          </div>
+          <div class="col span4-xs info-item">
+            <div class="info-text">24H Volume</div>
+            <div class="info-value">5360.98 BTC</div>
+          </div>
+          <div class="col span4-xs info-item">
+            <div class="info-text">active traders</div>
+            <div class="info-value">48,002</div>
+          </div>
+        </div>
+
+
+        <div class="row graph_indexes">
+          <div class="row section_inner">
+            <div class="owl-carousel graph-carousel">
+              <div class="item">
+                <div class="pair_item">BTC/USD</div>
+                <div class="pair_price">804.0000</div>
+              </div>
+              <div class="item">
+                <div class="pair_item">BTC/EUR</div>
+                <div class="pair_price">804.0000</div>
+              </div>
+              <div class="item pair_low">
+                <div class="pair_item">BTC/RUB</div>
+                <div class="pair_price">804.0000</div>
+              </div>
+              <div class="item pair_high">
+                <div class="pair_item">DASH/BTC</div>
+                <div class="pair_price">804.0000</div>
+              </div>
+              <div class="item">
+                <div class="pair_item">DASH/USD</div>
+                <div class="pair_price">804.0000</div>
+              </div>
+              <div class="item pair_low">
+                <div class="pair_item">ETH/BTC</div>
+                <div class="pair_price">804.0000</div>
+              </div>
+              <div class="item">
+                <div class="pair_item">ETH/USD</div>
+                <div class="pair_price">804.0000</div>
+              </div>
+              <div class="item pair_high">
+                <div class="pair_item">ETH/RUB</div>
+                <div class="pair_price">804.0000</div>
+              </div>
+              <div class="item">
+                <div class="pair_item">DOGE/BTC</div>
+                <div class="pair_price">804.0000</div>
+              </div>
+              <div class="item">
+                <div class="pair_item">DOGE/RUB</div>
+                <div class="pair_price">804.0000</div>
+              </div>
+              <div class="item">
+                <div class="pair_item">LTC/BTC</div>
+                <div class="pair_price">804.0000</div>
+              </div>
+              <div class="item">
+                <div class="pair_item">LTC/RUB</div>
+                <div class="pair_price">804.0000</div>
+              </div>
+              <div class="item">
+                <div class="pair_item">USD/RUB</div>
+                <div class="pair_price">804.0000</div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="header_btns desktop">
-          <a href="#" class="btn_header btn_authorization">Авторизация</a>
-          <a href="#" class="btn_header btn_registration">Регистрация</a>
-        </div>
-
-        <div class="hamburger hamburger--slider mobile" id="hamburger">
-          <div class="hamburger-box">
-            <div class="hamburger-inner"></div>
-          </div>
         </div>
 
       </div>
-
-      <div class="row header-center">
-        <div class="header-center-wrap">
-          <div class="row header-title-wrap">
-            <div class="header-title">
-              It has never been so easy
-            </div>
-
-            <div class="header-subtitle">
-              to use Bitcoin
-            </div>
-          </div>
-
-          <div class="row header-reg-wrap">
-            <form action="#" class="header-reg">
-              <input type="text" class="header-reg-input" placeholder="YOUR EMAIL">
-              <button href="#" class="header-reg-btn">Create an account</button>
-            </form>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-
-  </header>
-
-  <div class="info-indexes">
-    <div class="row info-wrap">
-      <div class="col span4-xs info-item">
-        <div class="info-text">bitcoin change</div>
-        <div class="info-value">+27.58%</div>
-      </div>
-      <div class="col span4-xs info-item">
-        <div class="info-text">24H Volume</div>
-        <div class="info-value">5360.98 BTC</div>
-      </div>
-      <div class="col span4-xs info-item">
-        <div class="info-text">active traders</div>
-        <div class="info-value">48,002</div>
-      </div>
-    </div>
-
-
-    <div class="row graph_indexes">
-      <div class="row section_inner">
-        <div class="owl-carousel graph-carousel">
-          <div class="item">
-            <div class="pair_item">BTC/USD</div>
-            <div class="pair_price">804.0000</div>
-          </div>
-          <div class="item">
-            <div class="pair_item">BTC/EUR</div>
-            <div class="pair_price">804.0000</div>
-          </div>
-          <div class="item pair_low">
-            <div class="pair_item">BTC/RUB</div>
-            <div class="pair_price">804.0000</div>
-          </div>
-          <div class="item pair_high">
-            <div class="pair_item">DASH/BTC</div>
-            <div class="pair_price">804.0000</div>
-          </div>
-          <div class="item">
-            <div class="pair_item">DASH/USD</div>
-            <div class="pair_price">804.0000</div>
-          </div>
-          <div class="item pair_low">
-            <div class="pair_item">ETH/BTC</div>
-            <div class="pair_price">804.0000</div>
-          </div>
-          <div class="item">
-            <div class="pair_item">ETH/USD</div>
-            <div class="pair_price">804.0000</div>
-          </div>
-          <div class="item pair_high">
-            <div class="pair_item">ETH/RUB</div>
-            <div class="pair_price">804.0000</div>
-          </div>
-          <div class="item">
-            <div class="pair_item">DOGE/BTC</div>
-            <div class="pair_price">804.0000</div>
-          </div>
-          <div class="item">
-            <div class="pair_item">DOGE/RUB</div>
-            <div class="pair_price">804.0000</div>
-          </div>
-          <div class="item">
-            <div class="pair_item">LTC/BTC</div>
-            <div class="pair_price">804.0000</div>
-          </div>
-          <div class="item">
-            <div class="pair_item">LTC/RUB</div>
-            <div class="pair_price">804.0000</div>
-          </div>
-          <div class="item">
-            <div class="pair_item">USD/RUB</div>
-            <div class="pair_price">804.0000</div>
-          </div>
-        </div>
-      </div>
-
     </div>
 
   </div>
+
+
+
+
 
   <div class="row graph">
     <div class="row section_inner">
@@ -379,6 +405,35 @@
             <div class="row review-author">
               <span class="review-author-name">Jony Ive,</span>
               <span class="review-author-company">Apple</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="row review review-top">
+            <div class="row review-text">
+              He made his passenger captain of one, with
+              four of the men; and himself, his mate, and
+              five more, went in the other; and they
+              contrived their business very well, for they
+              came up to the ship about midnight.
+            </div>
+            <div class="row review-author">
+              <span class="review-author-name">Sid Meier,</span>
+              <span class="review-author-company">MicroProse</span>
+            </div>
+          </div>
+
+          <div class="row review">
+            <div class="row review-text">
+              Have related the substance of several
+              conversations I had with my master during
+              the greatest part of the time I had the honour
+              to be in his service.
+            </div>
+            <div class="row review-author">
+              <span class="review-author-name">Brendan Iribel,</span>
+              <span class="review-author-company">Scaleform</span>
             </div>
           </div>
         </div>

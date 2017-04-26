@@ -36,6 +36,20 @@ $(document).ready(function() {
         $('#footer-4-list').fadeToggle(200);
     });
 
+    function activeBtn(i) {
+        var item = i;
+        $(item).on('click touch', function (e) {
+            $(item).each(function () {
+                $(this).removeClass('active')
+            });
+            $(this).addClass('active');
+        })
+    }
+
+    activeBtn('.graph-currency');
+    activeBtn('.graph-pair');
+    activeBtn('.graph-time');
+
 
 
 

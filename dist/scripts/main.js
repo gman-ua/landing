@@ -37,6 +37,20 @@ $(document).ready(function () {
         $(this).toggleClass('open-list');
         $('#footer-4-list').fadeToggle(200);
     });
+
+    function activeBtn(i) {
+        var item = i;
+        $(item).on('click touch', function (e) {
+            $(item).each(function () {
+                $(this).removeClass('active');
+            });
+            $(this).addClass('active');
+        });
+    }
+
+    activeBtn('.graph-currency');
+    activeBtn('.graph-pair');
+    activeBtn('.graph-time');
 });
 
 /* ---- particles.js config ---- */
@@ -44,7 +58,7 @@ $(document).ready(function () {
 particlesJS('particles-js', {
     'particles': {
         'number': {
-            'value': 80,
+            'value': 250,
             'density': {
                 'enable': true,
                 'value_area': 800
@@ -63,41 +77,41 @@ particlesJS('particles-js', {
                 'nb_sides': 5
             },
             'image': {
-                'src': 'img/github.svg',
+                'src': '',
                 'width': 100,
                 'height': 100
             }
         },
         'opacity': {
-            'value': 0.5,
+            'value': 0.35,
             'random': false,
             'anim': {
-                'enable': false,
-                'speed': 1,
-                'opacity_min': 0.1,
+                'enable': true,
+                'speed': 2,
+                'opacity_min': 0,
                 'sync': false
             }
         },
         'size': {
-            'value': 3,
-            'random': true,
+            'value': 1,
+            'random': false,
             'anim': {
                 'enable': false,
-                'speed': 40,
+                'speed': 20,
                 'size_min': 0.1,
                 'sync': false
             }
         },
         'line_linked': {
             'enable': true,
-            'distance': 150,
+            'distance': 100,
             'color': '#ffffff',
-            'opacity': 0.4,
+            'opacity': 0.3,
             'width': 1
         },
         'move': {
             'enable': true,
-            'speed': 2,
+            'speed': 3,
             'direction': 'none',
             'random': false,
             'straight': false,
@@ -105,7 +119,7 @@ particlesJS('particles-js', {
             'bounce': false,
             'attract': {
                 'enable': false,
-                'rotateX': 600,
+                'rotateX': 1200,
                 'rotateY': 1200
             }
         }
@@ -114,18 +128,18 @@ particlesJS('particles-js', {
         'detect_on': 'canvas',
         'events': {
             'onhover': {
-                'enable': false,
+                'enable': true,
                 'mode': 'grab'
             },
             'onclick': {
-                'enable': true,
-                'mode': 'push'
+                'enable': false,
+                'mode': 'grab'
             },
             'resize': true
         },
         'modes': {
             'grab': {
-                'distance': 140,
+                'distance': 100,
                 'line_linked': {
                     'opacity': 1
                 }
@@ -813,10 +827,17 @@ $(document).ready(function () {
             1000: {
                 items: 3,
                 nav: true,
-                loop: false,
+                loop: true,
                 margin: 20
             }
         }
     });
+});
+
+//Bug Chrome mobile brouser
+$(document).ready(function () {
+    var $hero = $('#hero');
+    var h = window.innerHeight;
+    $hero.css('min-height', h);
 });
 //# sourceMappingURL=main.js.map

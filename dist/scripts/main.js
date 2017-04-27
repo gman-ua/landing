@@ -13,7 +13,7 @@ $(document).ready(function () {
         $('#main-nav').fadeToggle(200);
     });
 
-    $(window).on("load", function () {
+    $(window).on('load', function () {
         if ($(this).width() < 1000) {
             $('#soc-med').on('click touch', function () {
                 $(this).toggleClass('open-list');
@@ -40,7 +40,7 @@ $(document).ready(function () {
                 $('#footer-4-list').fadeToggle(200);
             });
         } else {
-            $("[data-action=change]").html("Desktop");
+            $('[data-action=change]').html('Desktop');
         }
     });
 

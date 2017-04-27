@@ -13,29 +13,35 @@ $(document).ready(function () {
         $('#main-nav').fadeToggle(200);
     });
 
-    $('#soc-med').on('click touch', function () {
-        $(this).toggleClass('open-list');
-        $('#soc-med-list').fadeToggle(200);
-    });
+    $(window).on("load", function () {
+        if ($(this).width() < 1000) {
+            $('#soc-med').on('click touch', function () {
+                $(this).toggleClass('open-list');
+                $('#soc-med-list').fadeToggle(200);
+            });
 
-    $('#footer-1').on('click touch', function () {
-        $(this).toggleClass('open-list');
-        $('#footer-1-list').fadeToggle(200);
-    });
+            $('#footer-1').on('click touch', function () {
+                $(this).toggleClass('open-list');
+                $('#footer-1-list').fadeToggle(200);
+            });
 
-    $('#footer-2').on('click touch', function () {
-        $(this).toggleClass('open-list');
-        $('#footer-2-list').fadeToggle(200);
-    });
+            $('#footer-2').on('click touch', function () {
+                $(this).toggleClass('open-list');
+                $('#footer-2-list').fadeToggle(200);
+            });
 
-    $('#footer-3').on('click touch', function () {
-        $(this).toggleClass('open-list');
-        $('#footer-3-list').fadeToggle(200);
-    });
+            $('#footer-3').on('click touch', function () {
+                $(this).toggleClass('open-list');
+                $('#footer-3-list').fadeToggle(200);
+            });
 
-    $('#footer-4').on('click touch', function () {
-        $(this).toggleClass('open-list');
-        $('#footer-4-list').fadeToggle(200);
+            $('#footer-4').on('click touch', function () {
+                $(this).toggleClass('open-list');
+                $('#footer-4-list').fadeToggle(200);
+            });
+        } else {
+            $("[data-action=change]").html("Desktop");
+        }
     });
 
     function activeBtn(i) {
@@ -51,6 +57,30 @@ $(document).ready(function () {
     activeBtn('.graph-currency');
     activeBtn('.graph-pair');
     activeBtn('.graph-time');
+
+    $('#pulse-container').on('click touch', function (e) {
+        e.stopPropagation();
+        $('#form-hint').toggle(200);
+    });
+
+    $('.container').on('click touch', function (e) {
+        $('#form-hint').fadeOut(200);
+    });
+
+    function graphTitle(button, text) {
+        var btn = button;
+        var title = text;
+
+        $(btn).on('click touch', function () {
+            $('#block-title').text(title);
+        });
+    };
+
+    graphTitle('#graph-bitcoin', 'Bitcoin price chart');
+    graphTitle('#graph-dash', 'Dash price chart');
+    graphTitle('#graph-ethereum', 'Ethereum price chart');
+    graphTitle('#graph-doge', 'Doge price chart');
+    graphTitle('#graph-litecoin', 'Litecoin price chart');
 });
 
 /* ---- particles.js config ---- */

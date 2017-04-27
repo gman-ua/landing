@@ -41,6 +41,16 @@ $(document).ready(function() {
         }
     })
 
+    $('#header-reg-input').on('change keyup paste', function() {
+        var inputvalue = $.trim(this.value).length;
+        if(inputvalue) {
+            $('#form-marker-wrap').fadeOut(200);
+        }
+        else {
+            $('#form-marker-wrap').fadeIn(200);
+        }
+    });
+
 
 
     function activeBtn(i) {

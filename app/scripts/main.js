@@ -51,6 +51,29 @@ $(document).ready(function() {
     activeBtn('.graph-time');
 
 
+    $('#pulse-container').on('click touch', function (e) {
+        e.stopPropagation();
+        $('#form-hint').toggle(200);
+    });
+
+    $('.container').on('click touch', function (e) {
+        $('#form-hint').fadeOut(200);
+    })
+
+    function graphTitle(button, text) {
+        var btn = button;
+        var title = text;
+
+        $(btn).on('click touch', function () {
+            $('#block-title').text(title);
+        });
+    };
+
+    graphTitle('#graph-bitcoin', 'Bitcoin price chart');
+    graphTitle('#graph-dash', 'Dash price chart');
+    graphTitle('#graph-ethereum', 'Ethereum price chart');
+    graphTitle('#graph-doge', 'Doge price chart');
+    graphTitle('#graph-litecoin', 'Litecoin price chart');
 
 
 

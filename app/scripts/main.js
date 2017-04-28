@@ -36,10 +36,24 @@ $(document).ready(function() {
                 $(this).toggleClass('open-list');
                 $('#footer-4-list').fadeToggle(200);
             });
+
+            //Bug Chrome mobile brouser
+            $(document).ready(function() {
+                var $hero = $('.fullpage');
+                var h = window.innerHeight;
+                /*$hero.css('min-height', h);*/
+                $hero.css({"min-height": h, "height": "100%"});
+            });
+
         } else {
             $('[data-action=change]').html('Desktop')
         }
-    })
+
+
+
+
+
+    });
 
     $('#header-reg-input').on('change keyup paste', function() {
         var inputvalue = $.trim(this.value).length;
@@ -292,10 +306,3 @@ $(document).ready(function() {
     })
 })
 
-
-//Bug Chrome mobile brouser
-$(document).ready(function() {
-    var $hero = $('#hero');
-    var h = window.innerHeight;
-    $hero.css('min-height', h);
-});

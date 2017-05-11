@@ -701,6 +701,16 @@
 <!-- bower:js -->
 <script src="/bower_components/jquery/dist/jquery.js"></script>
 <script src="/bower_components/modernizr/modernizr.js"></script>
+<script>
+    $(document).ready(function($) {
+        $('.counter-value').counterUp({
+            delay: 50,
+            time: 1000
+        });
+    });
+</script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script src="jquery.counterup.min.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 

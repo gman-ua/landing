@@ -39,6 +39,13 @@ $(document).ready(function () {
                 $(this).toggleClass('open-list');
                 $('#footer-4-list').fadeToggle(200);
             });
+
+            //Bug Chrome mobile brouser
+            $(document).ready(function () {
+                var $header = $('.fullpage');
+                var h = window.innerHeight;
+                $header.css('min-height', h);
+            });
         } else {
             $('[data-action=change]').html('Desktop');
         }
@@ -91,6 +98,42 @@ $(document).ready(function () {
     graphTitle('#graph-doge', 'Doge price chart');
     graphTitle('#graph-litecoin', 'Litecoin price chart');
 });
+
+/*var a = 0;
+$(window).scroll(function() {
+
+    var oTop = $('#counter').offset().top - window.innerHeight;
+    if (a == 0 && $(window).scrollTop() > oTop) {
+        $('.counter-value').each(function() {
+            var $this = $(this),
+                countTo = $this.attr('data-count');
+            $({
+                countNum: $this.text()
+            }).animate({
+                    countNum: countTo
+                },
+
+                {
+
+                    duration: 3000,
+                    easing: 'swing',
+                    step: function() {
+                        $this.text(Math.floor(this.countNum));
+                    },
+                    complete: function() {
+
+                        $this.text(this.countNum);
+                        //alert('finished');
+                    }
+
+                });
+        });
+        a = 1;
+    }
+
+});*/
+//Number counter
+
 
 /* ---- particles.js config ---- */
 
@@ -844,7 +887,7 @@ $(document).ready(function () {
     });
 
     $('.reviews-carousel').owlCarousel({
-        loop: true,
+        loop: false,
         margin: 0,
         responsiveClass: true,
         rewind: true,
@@ -854,6 +897,8 @@ $(document).ready(function () {
         autoplayHoverPause: true,
         dots: false,
         navText: ['', 'Next reviews'],
+        mouseDrag: false,
+        smartSpeed: 150,
         responsive: {
             0: {
                 items: 1,
@@ -871,12 +916,5 @@ $(document).ready(function () {
             }
         }
     });
-});
-
-//Bug Chrome mobile brouser
-$(document).ready(function () {
-    var $hero = $('#hero');
-    var h = window.innerHeight;
-    $hero.css('min-height', h);
 });
 //# sourceMappingURL=main.js.map

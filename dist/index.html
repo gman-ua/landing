@@ -13,211 +13,215 @@
   <link rel="stylesheet" href="styles/main.css">
 
   <script src="scripts/vendor/modernizr.js"></script>
-  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+	<script src="/bower_components/modernizr/modernizr.js"></script>
+	<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+	<script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
 </head>
 <body>
 <div class="container">
-
-  <div class="fullpage" id="hero">
-
-    <div class="content">
-      <header class="row header" id="particles-js">
-        <div class="row section_inner">
-          <div class="row menu-wrap">
-            <a href="#" class="header-logo">
-              <img src="images/logo.svg" alt="EXMO logotype">
-            </a>
+  <div class="row top-ui-panel">
+    <a href="#" class="header-logo">
+      <img src="images/logo.svg" alt="EXMO logotype">
+    </a>
 
 
-            <nav class="nav" id="main-nav">
-              <ul class="menu">
-                <li><a href="#">Exchange</a></li>
-                <li><a href="#">Buy &amp; Sell</a></li>
-                <li><a href="#">Affiliate Program</a></li>
-                <li><a href="#">Support &amp; Help</a></li>
-                <li class="mobile"><a href="#">Authorization</a></li>
-                <li class="mobile"><a href="#">Registration</a></li>
-              </ul>
-            </nav>
+    <nav class="nav" id="main-nav">
+      <ul class="menu">
+        <li><a href="#">Exchange</a></li>
+        <li><a href="#">Buy &amp; Sell</a></li>
+        <li><a href="#">Affiliate Program</a></li>
+        <li><a href="#">Support &amp; Help</a></li>
+        <li class="mobile"><a href="#">Authorization</a></li>
+        <li class="mobile"><a href="#">Registration</a></li>
+      </ul>
+    </nav>
 
-            <div class="lang-reg-block">
-              <div class="user_default">
-                <div class="user_default_lang">
-                  <div class="user_default_lang_active uk">UA</div>
-                  <div class="user_default_lang_drop">
-                    <ul class="lang_list">
-                      <li><a href="#" class="en">English</a></li>
-                      <li><a href="#" class="es">Español</a></li>
-                      <li><a href="#" class="fr">Français</a></li>
-                      <li><a href="#" class="de">Deutsch</a></li>
-                      <li><a href="#" class="it">Italiano</a></li>
-                      <li><a href="#" class="pt">Português</a></li>
-                      <li><a href="#" class="ro">Română</a></li>
-                      <li><a href="#" class="zh">中文</a></li>
-                      <li><a href="#" class="ru">Русский</a></li>
-                      <li><a href="#" class="uk">Українська</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-                <a href="#" class="btn_header btn_authorization">Авторизация</a>
-                <a href="#" class="btn_header btn_registration">Регистрация</a>
-            </div>
-
-
-
-            <div class="hamburger hamburger--slider" id="hamburger">
-              <div class="hamburger-box">
-                <div class="hamburger-inner"></div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="row header-center">
-            <div class="header-center-wrap">
-              <div class="row header-title-wrap">
-                <div class="header-title">
-                  It has never been so easy
-                </div>
-
-                <div class="header-subtitle">
-                  to use Bitcoin
-                </div>
-              </div>
-
-              <div class="row header-reg-wrap">
-                <form action="#" class="header-reg">
-                  <div class="row header-group-btns">
-                    <input type="text" class="header-reg-input" placeholder="YOUR EMAIL" id="header-reg-input">
-                    <button href="#" class="header-reg-btn">Create an account</button>
-                  </div>
-
-                  <div class="form-marker-wrap" id="form-marker-wrap">
-                    <div class="pulse-container" id="pulse-container">
-                      <div class="pulse-box">
-                        <div class="pulse-css">
-                          <div class="pulse-dot"></div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="form-hint" id="form-hint">
-
-                      <div class="form-hint-wrap">
-                        <div class="row form-hint-title">
-                          Quick Registration
-                        </div>
-                        <div class="row form-hint-text">
-                          Enter your email address and complete a simple registration to trade just now
-                        </div>
-                        <div class="row">
-                          <a href="#" class="form-hint-btn">Got it!</a>
-                        </div>
-
-                      </div>
-
-                    </div>
-                  </div>
-                </form>
-
-
-
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-      </header>
-
-      <div class="info-indexes">
-        <div class="row info-wrap">
-          <div class="col span4-xs info-item">
-            <div class="info-text">bitcoin change</div>
-            <div class="info-value">+27.58%</div>
-          </div>
-          <div class="col span4-xs info-item">
-            <div class="info-text">24H Volume</div>
-            <div class="info-value">5360.98 BTC</div>
-          </div>
-          <div class="col span4-xs info-item">
-            <div class="info-text">active traders</div>
-            <div class="info-value">48,002</div>
+    <div class="lang-reg-block">
+      <div class="user_default">
+        <div class="user_default_lang">
+          <div class="user_default_lang_active uk">UA</div>
+          <div class="user_default_lang_drop">
+            <ul class="lang_list">
+              <li><a href="#" class="en">English</a></li>
+              <li><a href="#" class="es">Español</a></li>
+              <li><a href="#" class="fr">Français</a></li>
+              <li><a href="#" class="de">Deutsch</a></li>
+              <li><a href="#" class="it">Italiano</a></li>
+              <li><a href="#" class="pt">Português</a></li>
+              <li><a href="#" class="ro">Română</a></li>
+              <li><a href="#" class="zh">中文</a></li>
+              <li><a href="#" class="ru">Русский</a></li>
+              <li><a href="#" class="uk">Українська</a></li>
+            </ul>
           </div>
         </div>
+      </div>
+
+      <a href="#" class="btn_header btn_authorization">Авторизация</a>
+      <a href="#" class="btn_header btn_registration">Регистрация</a>
+    </div>
 
 
-        <div class="row graph_indexes">
-          <div class="row section_inner">
-            <div class="owl-carousel graph-carousel">
-              <div class="item">
-                <div class="pair_item">BTC/USD</div>
-                <div class="pair_price">804.0000</div>
-              </div>
-              <div class="item">
-                <div class="pair_item">BTC/EUR</div>
-                <div class="pair_price">804.0000</div>
-              </div>
-              <div class="item pair_low">
-                <div class="pair_item">BTC/RUB</div>
-                <div class="pair_price">804.0000</div>
-              </div>
-              <div class="item pair_high">
-                <div class="pair_item">DASH/BTC</div>
-                <div class="pair_price">804.0000</div>
-              </div>
-              <div class="item">
-                <div class="pair_item">DASH/USD</div>
-                <div class="pair_price">804.0000</div>
-              </div>
-              <div class="item pair_low">
-                <div class="pair_item">ETH/BTC</div>
-                <div class="pair_price">804.0000</div>
-              </div>
-              <div class="item">
-                <div class="pair_item">ETH/USD</div>
-                <div class="pair_price">804.0000</div>
-              </div>
-              <div class="item pair_high">
-                <div class="pair_item">ETH/RUB</div>
-                <div class="pair_price">804.0000</div>
-              </div>
-              <div class="item">
-                <div class="pair_item">DOGE/BTC</div>
-                <div class="pair_price">804.0000</div>
-              </div>
-              <div class="item">
-                <div class="pair_item">DOGE/RUB</div>
-                <div class="pair_price">804.0000</div>
-              </div>
-              <div class="item">
-                <div class="pair_item">LTC/BTC</div>
-                <div class="pair_price">804.0000</div>
-              </div>
-              <div class="item">
-                <div class="pair_item">LTC/RUB</div>
-                <div class="pair_price">804.0000</div>
-              </div>
-              <div class="item">
-                <div class="pair_item">USD/RUB</div>
-                <div class="pair_price">804.0000</div>
-              </div>
-            </div>
-          </div>
 
-        </div>
-
+    <div class="hamburger hamburger--slider" id="hamburger">
+      <div class="hamburger-box">
+        <div class="hamburger-inner"></div>
       </div>
     </div>
 
   </div>
+  <header class="row fullpage" id="particles-js">
+
+	  <div class="row header-center">
+
+		  <div class="row header-title-wrap">
+			  <div class="header-title">
+				  It has never been so easy
+			  </div>
+
+			  <div class="header-subtitle">
+				  to use Bitcoin
+			  </div>
+		  </div>
+
+		  <div class="row header-reg-wrap">
+			  <form action="#" class="header-reg">
+				  <div class="row header-group-btns">
+					  <input type="text" class="header-reg-input" placeholder="YOUR EMAIL" id="header-reg-input">
+
+
+					  <button href="#" class="header-reg-btn">Create an account</button>
+
+					  <!--<div class="header-reg-checkbox">
+						  <input class="magic-checkbox" type="checkbox" name="layout" id="agree-text" value="option" checked>
+						  <label for="agree-text"></label>
+						  <label class="magic-label-text" for="agree-text">
+							  I read and agree with <a href="#" class="agree-text-link">terms & conditions</a>
+						  </label>
+					  </div>-->
+				  </div>
+
+				  <div class="form-marker-wrap" id="form-marker-wrap">
+					  <div class="pulse-container" id="pulse-container">
+						  <div class="pulse-box">
+							  <div class="pulse-css">
+								  <div class="pulse-dot"></div>
+							  </div>
+						  </div>
+					  </div>
+
+					  <div class="form-hint" id="form-hint">
+
+						  <div class="form-hint-wrap">
+							  <div class="row form-hint-title">
+								  Quick Registration
+							  </div>
+							  <div class="row form-hint-text">
+								  Enter your email address and complete a simple registration to trade just now
+							  </div>
+							  <div class="row">
+								  <a href="#" class="form-hint-btn">Got it!</a>
+							  </div>
+
+						  </div>
+
+					  </div>
+				  </div>
+			  </form>
 
 
 
+		  </div>
+
+
+	  </div>
+
+  	<div class="info-indexes">
+		  <div class="row info-wrap">
+			  <div class="col span4-xs info-item">
+				  <div class="info-item-wrap">
+					  <div class="info-text">bitcoin change</div>
+					  <div class="info-value">+27.58%</div>
+				  </div>
+			  </div>
+			  <div class="col span4-xs info-item">
+				  <div class="info-item-wrap">
+					  <div class="info-text">24H Volume</div>
+					  <div class="info-value">5360.98 BTC</div>
+				  </div>
+			  </div>
+			  <div class="col span4-xs info-item">
+				  <div class="info-item-wrap">
+					  <div class="info-text">active traders</div>
+					  <div class="info-value">48,002</div>
+				  </div>
+			  </div>
+		  </div>
+
+
+		  <div class="row graph_indexes">
+			  <div class="row section_inner">
+				  <div class="owl-carousel graph-carousel">
+					  <div class="item">
+						  <div class="pair_item">BTC/USD</div>
+						  <div class="pair_price">804.0000</div>
+					  </div>
+					  <div class="item">
+						  <div class="pair_item">BTC/EUR</div>
+						  <div class="pair_price">804.0000</div>
+					  </div>
+					  <div class="item pair_low">
+						  <div class="pair_item">BTC/RUB</div>
+						  <div class="pair_price">804.0000</div>
+					  </div>
+					  <div class="item pair_high">
+						  <div class="pair_item">DASH/BTC</div>
+						  <div class="pair_price">804.0000</div>
+					  </div>
+					  <div class="item">
+						  <div class="pair_item">DASH/USD</div>
+						  <div class="pair_price">804.0000</div>
+					  </div>
+					  <div class="item pair_low">
+						  <div class="pair_item">ETH/BTC</div>
+						  <div class="pair_price">804.0000</div>
+					  </div>
+					  <div class="item">
+						  <div class="pair_item">ETH/USD</div>
+						  <div class="pair_price">804.0000</div>
+					  </div>
+					  <div class="item pair_high">
+						  <div class="pair_item">ETH/RUB</div>
+						  <div class="pair_price">804.0000</div>
+					  </div>
+					  <div class="item">
+						  <div class="pair_item">DOGE/BTC</div>
+						  <div class="pair_price">804.0000</div>
+					  </div>
+					  <div class="item">
+						  <div class="pair_item">DOGE/RUB</div>
+						  <div class="pair_price">804.0000</div>
+					  </div>
+					  <div class="item">
+						  <div class="pair_item">LTC/BTC</div>
+						  <div class="pair_price">804.0000</div>
+					  </div>
+					  <div class="item">
+						  <div class="pair_item">LTC/RUB</div>
+						  <div class="pair_price">804.0000</div>
+					  </div>
+					  <div class="item">
+						  <div class="pair_item">USD/RUB</div>
+						  <div class="pair_price">804.0000</div>
+					  </div>
+				  </div>
+			  </div>
+
+		  </div>
+
+	  </div>
+
+  </header>
 
 
   <div class="row graph">
@@ -366,31 +370,22 @@
         <div class="item">
           <div class="row review review-top">
             <div class="row review-text">
-              Have related the substance of several
-              conversations I had with my master during
-              the greatest part of the time I had the honour
-              to be in his service; but have, indeed, for
-              brevity sake, omitted much more than is here
-              set down. They made signs for me to come
-              down from the rock
+				Первое, что хочу отметить - это удобная и понятная навигация на бирже. Второе - хороший дизайн. Третье - удобный вывод криптовалюты или фиатных денег на распространенные платежные системы с которыми удобно работать! Так же хочу отметить, что данная биржа подходит как для продвинутых трейдеров, так и для начинающих. Отдельно стоит отметить тех.поддержку, которая всегда своевременно отвечает на любые вопросы.
             </div>
             <div class="row review-author">
-              <span class="review-author-name">Gabe Logan Newell,</span>
-              <span class="review-author-company">Valve</span>
+              <span class="review-author-name">Родион,</span>
+              <span class="review-author-company">СЕО</span>
             </div>
           </div>
 
           <div class="row review">
             <div class="row review-text">
-              He made his passenger captain of one, with
-              four of the men; and himself, his mate, and
-              five more, went in the other; and they
-              contrived their business very well, for they
-              came up to the ship about midnight.
+				Работаем с биржей EXMO, нареканий нет, сотрудники знают своё дело и
+				функционал сайта тоже радует. Успехов и дальнейшего развития!
             </div>
             <div class="row review-author">
-              <span class="review-author-name">John Carmack,</span>
-              <span class="review-author-company">id Software</span>
+              <span class="review-author-name">Pay4bit.biz,</span>
+              <span class="review-author-company">обменник</span>
             </div>
           </div>
         </div>
@@ -398,30 +393,21 @@
         <div class="item">
           <div class="row review review-top">
             <div class="row review-text">
-              When the last 'natural' had been declared, and
-              the profit and loss account of fish and
-              sixpences adjusted, to the satisfaction of all
-              parties.
+				Лучший выбор! EXMO популярная биржа, которая позволяет зарабатывать на торговле криптовалютами, а также пополнять/выводить биткоины или фиатные деньги на популярные платежные системы.
             </div>
             <div class="row review-author">
-              <span class="review-author-name">Gabe Logan Newell,</span>
-              <span class="review-author-company">Valve</span>
+              <span class="review-author-name">Вячеслав,</span>
+              <span class="review-author-company">инвестор</span>
             </div>
           </div>
 
           <div class="row review">
             <div class="row review-text">
-              Have related the substance of several
-              conversations I had with my master during
-              the greatest part of the time I had the honour
-              to be in his service; but have, indeed, for
-              brevity sake, omitted much more than is here
-              set down. They made signs for me to come
-              down from the rock
+				С самого первого дня работы на этой бирже у меня возникли только положительные эмоции. Я прошел очень много проектов и всевозможных бирж, сталкивался с обманом, но EXMO - это что-то невообразимое. Очень удобный интерфейс, понятная торговая площадка, скорость операций, хорошая тех.поддержка и т.д, перечислять можно долго. EXMO, на мой взгляд, самая лучшая биржа. Желаю всем удачи.
             </div>
             <div class="row review-author">
-              <span class="review-author-name">Jony Ive,</span>
-              <span class="review-author-company">Apple</span>
+              <span class="review-author-name">Алексей,</span>
+              <span class="review-author-company">трейдер</span>
             </div>
           </div>
         </div>
@@ -429,28 +415,21 @@
         <div class="item">
           <div class="row review review-top">
             <div class="row review-text">
-              He made his passenger captain of one, with
-              four of the men; and himself, his mate, and
-              five more, went in the other; and they
-              contrived their business very well, for they
-              came up to the ship about midnight.
+				Я сотрудничаю с биржей с 2014 года. Хочу отметить профессионализм и вежливость сотрудников, их оперативность в работе. Постоянные акции и обновления для удобства клиентов. EXMO - это единственная, на мой взгляд, биржа которая проста в использовании и подходит всем.
             </div>
             <div class="row review-author">
-              <span class="review-author-name">Sid Meier,</span>
-              <span class="review-author-company">MicroProse</span>
+              <span class="review-author-name">Борис,</span>
+              <span class="review-author-company">трейдер</span>
             </div>
           </div>
 
           <div class="row review">
             <div class="row review-text">
-              Have related the substance of several
-              conversations I had with my master during
-              the greatest part of the time I had the honour
-              to be in his service.
+				Для покупки и продажи криптовалюты пользуюсь биржей EXMO - хороший курс, низкий процент, быстрые транзакции. Простая и быстрая регистрация, кошелек оснащен высокой защитой. Есть большой выбор направлений обмена. Мне очень нравится, всем советую.
             </div>
             <div class="row review-author">
-              <span class="review-author-name">Brendan Iribel,</span>
-              <span class="review-author-company">Scaleform</span>
+              <span class="review-author-name">Владимир,</span>
+              <span class="review-author-company">финансист</span>
             </div>
           </div>
         </div>
@@ -458,28 +437,21 @@
         <div class="item">
           <div class="row review review-top">
             <div class="row review-text">
-              He made his passenger captain of one, with
-              four of the men; and himself, his mate, and
-              five more, went in the other; and they
-              contrived their business very well, for they
-              came up to the ship about midnight.
+				Очень доволен данной биржей. Зачисление и вывод происходит быстро. Всегда отписывают в случае возникновения вопросов, хорошая защита сайта. На EXMO можно нормально зарабатывать. Очень советую! Здесь водятся большие деньги!
             </div>
             <div class="row review-author">
-              <span class="review-author-name">Sid Meier,</span>
-              <span class="review-author-company">MicroProse</span>
+              <span class="review-author-name">Андрей,</span>
+              <span class="review-author-company">предприниматель</span>
             </div>
           </div>
 
           <div class="row review">
             <div class="row review-text">
-              Have related the substance of several
-              conversations I had with my master during
-              the greatest part of the time I had the honour
-              to be in his service.
+				Я пользуюсь биржой EXMO уже больше года и никаких нареканий на работу пока у меня нет. Только положительные эмоции: удобный интерфейс, выбор криптовалют, удобные способы зачисления и вывода средств и низкая комиссия. Всем рекомендую.
             </div>
             <div class="row review-author">
-              <span class="review-author-name">Brendan Iribel,</span>
-              <span class="review-author-company">Scaleform</span>
+              <span class="review-author-name">Руслан,</span>
+              <span class="review-author-company">веб-мастер</span>
             </div>
           </div>
         </div>
@@ -490,14 +462,24 @@
   </div>
 
 
-  <div class="row reg-count">
+  <!--<div class="row reg-count">
     <div class="row section_inner">
-      <div class="row reg-count-wrap">
-        <div class="row reg-count-title">402,809</div>
+      <div class="row reg-count-wrap"  id="counter">
+        <div class="row reg-count-title counter-value" data-count="402809">0</div>
         <div class="row reg-count-subtitle">people trust in over 200 countries</div>
       </div>
     </div>
-  </div>
+  </div>-->
+
+	<div class="row reg-count">
+		<div class="row section_inner">
+			<div class="row reg-count-wrap">
+
+				<div class="row reg-count-title counter-value">634,567</div>
+				<div class="row reg-count-subtitle">people trust in over 200 countries</div>
+			</div>
+		</div>
+	</div>
 
 
   <div class="row section_inner">
@@ -629,6 +611,7 @@
           <div class="row footer_menu_title" id="soc-med">Подписывайтесь на нас</div>
           <div class="row soc_med" id="soc-med-list">
             <ul class="soc_med_list">
+              <li><a href="https://t.me/exmo_com" class="soc_med_tel">Telegram Channel<br>600 members</a></li>
               <li><a href="#" class="soc_med_tw">Twitter<br>1,002 followers</a></li>
               <li><a href="#" class="soc_med_fb">Facebook<br>3,405 with us</a></li>
               <li><a href="#" class="soc_med_vk">VK<br>27,084 members join</a></li>
@@ -710,5 +693,15 @@
 <script src="scripts/vendor.js"></script>
 
 <script src="scripts/main.js"></script>
+<script>
+    $(document).ready(function($) {
+        $('.counter-value').counterUp({
+            delay: 50,
+            time: 1000
+        });
+    });
+</script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script src="jquery.counterup.min.js"></script>
 </body>
 </html>

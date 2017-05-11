@@ -141,7 +141,7 @@ $(window).scroll(function() {
 
 /* ---- particles.js config ---- */
 
-particlesJS('particles-js', {
+/*particlesJS('particles-js', {
     'particles': {
         'number': {
             'value': 250,
@@ -250,7 +250,7 @@ particlesJS('particles-js', {
         }
     },
     'retina_detect': true
-});
+});*/
 
 
 

@@ -2296,3 +2296,14 @@ and (orientation: landscape) {
     background-image: url(../images/reg-count-5000-2812.jpg);
   }
 }
+
+#particles {
+  overflow: hidden;
+
+  canvas {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}

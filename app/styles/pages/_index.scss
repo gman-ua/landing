@@ -32,7 +32,10 @@ a {
   position: relative;
   padding-top: 60px;
   padding-bottom: 161px;
-  background: #1a4ef8;
+  /*background: #1a4ef8;*/
+  background-color: #1a4ef8;
+  background: linear-gradient(45deg, #1743d7 35%, #174aF3 100%);
+
 }
 
 
@@ -362,6 +365,7 @@ a {
   text-align: center;
   color: $white;
   margin-bottom: 5px;
+  text-transform: uppercase;
 }
 
 .header-subtitle {
@@ -404,6 +408,7 @@ a {
   &:focus {
     color: $blue_dark2;
     border: none;
+    box-shadow: inset 0 0 0 2px rgba(52, 127, 251, 1);
   }
 }
 
@@ -1385,6 +1390,10 @@ ul[class*="footer_menu_"] {
     bottom: -15px;
   }*/
 
+  .header-center {
+    padding: 0 20px;
+  }
+
 
   .header-reg {
     min-width: 360px;
@@ -1551,6 +1560,11 @@ and (orientation: landscape) {
 
   .btn_registration {
     background: #1034aa;
+    border: 1px solid #1034aa;
+
+    &:hover {
+      border-color: #347ffb;
+    }
   }
 
 
@@ -1687,10 +1701,11 @@ and (orientation: landscape) {
   }
 
   .form-hint-wrap {
-    background: $white;
+    background: rgba(255, 255, 255, .98);
     border-radius: 4px;
     width: 275px;
     padding: 16px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
   }
 
   .form-hint-title {
@@ -1733,9 +1748,9 @@ and (orientation: landscape) {
   /* pulse in CSS */
   .pulse-css{
     @include circle(30px);
-    background: rgba(115,181,255,0.5);
+    background: rgba(115, 181, 255, 0.3);
     cursor: pointer;
-    box-shadow: 0 0 14px 0 rgba(0,0,0,0.33);
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
     /*box-shadow: inset 0 0 50px rgba(115,181,255,0.8);*/
     position: relative;
 
@@ -2078,7 +2093,12 @@ and (orientation: landscape) {
     }
   }
 
-  .header-title, .header-subtitle {
+  .header-title {
+    font-weight: 300;
+    font-size: 62px;
+  }
+
+  .header-subtitle {
     font-size: 56px;
     font-weight: 300;
   }
@@ -2211,8 +2231,9 @@ and (orientation: landscape) {
 
   .blog-post-text {
     color: #727989;
-    font-size: 15px;
+    font-size: 14px;
     margin-bottom: 10px;
+    line-height: 1.5;
   }
 
   .blog-post-btn {

@@ -51,11 +51,13 @@ $(document).ready(function () {
         }
     });
 
-    $('#header-reg-input').on('change keyup paste', function () {
+    $('#header-reg-input').focusin(function () {
+        $('#form-marker-wrap').fadeOut(200);
+    });
+
+    $('#header-reg-input').focusout(function () {
         var inputvalue = $.trim(this.value).length;
-        if (inputvalue) {
-            $('#form-marker-wrap').fadeOut(200);
-        } else {
+        if (!inputvalue) {
             $('#form-marker-wrap').fadeIn(200);
         }
     });
@@ -92,11 +94,11 @@ $(document).ready(function () {
         });
     };
 
-    graphTitle('#graph-bitcoin', 'Bitcoin price chart');
-    graphTitle('#graph-dash', 'Dash price chart');
-    graphTitle('#graph-ethereum', 'Ethereum price chart');
-    graphTitle('#graph-doge', 'Doge price chart');
-    graphTitle('#graph-litecoin', 'Litecoin price chart');
+    graphTitle('#graph-bitcoin', 'График стоимости Bitcoin');
+    graphTitle('#graph-dash', 'График стоимости Dash');
+    graphTitle('#graph-ethereum', 'График стоимости Ethereum');
+    graphTitle('#graph-doge', 'График стоимости Doge');
+    graphTitle('#graph-litecoin', 'График стоимости Litecoin');
 });
 
 /*var a = 0;
@@ -896,7 +898,7 @@ $(document).ready(function () {
         autoplayTimeout: 3000,
         autoplayHoverPause: true,
         dots: false,
-        navText: ['', 'Next reviews'],
+        navText: ['', 'Больше отзывов'],
         mouseDrag: false,
         smartSpeed: 150,
         responsive: {

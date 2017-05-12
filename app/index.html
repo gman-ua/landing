@@ -84,11 +84,11 @@
 
 		  <div class="row header-title-wrap">
 			  <div class="header-title">
-				  It has never been so easy
+				  Secure
 			  </div>
 
 			  <div class="header-subtitle">
-				  to use Bitcoin
+				  Cryptocurrency Exchange
 			  </div>
 		  </div>
 
@@ -702,33 +702,43 @@
 <!-- bower:js -->
 <script src="/bower_components/jquery/dist/jquery.js"></script>
 <script src="/bower_components/modernizr/modernizr.js"></script>
-<script src="jquery.particleground.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 
 <!-- build:js scripts/main.js -->
 <script src="scripts/main.js"></script>
+<!-- endbuild -->
+<script>
+    $(document).ready(function($) {
+        $('.counter-value').counterUp({
+            delay: 50,
+            time: 1000
+        });
+    });
+</script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script src="jquery.counterup.min.js"></script>
+<script src="jquery.particleground.js"></script>
 <script>
     $(document).ready(function() {
         $('#particles').particleground({
-            dotColor: 'rgba(255, 255, 255, 1)',
-            lineColor: 'rgba(255, 255, 255, 0.05)',
-            minSpeedX: 0.3,
+            dotColor: 'rgba(255, 255, 255, 0.92)',
+            lineColor: 'rgba(255, 255, 255, 0.1)',
+            minSpeedX: 0.1,
             maxSpeedX: 0.6,
-            minSpeedY: 0.3,
+            minSpeedY: 0.1,
             maxSpeedY: 0.6,
             lineWidth: 1,
-            density: 10000, // One particle every n pixels
+            density: 11000, // One particle every n pixels
             curvedLines: false,
             proximity: 150, // How close two dots need to be before they join
             parallaxMultiplier: 10, // Lower the number is more extreme parallax
-            particleRadius: 2, // Dot size
+            particleRadius: 3, // Dot size
         });
         $('.intro').css({
             'margin-top': -($('.intro').height() / 2)
         });
     });
 </script>
-<!-- endbuild -->
 </body>
 </html>

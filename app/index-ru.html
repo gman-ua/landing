@@ -9,10 +9,21 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
 
-  <script src="scripts/vendor/modernizr.js"></script>
+  <!-- build:js scripts/vendor/modernizr.js -->
+  <script src="/bower_components/modernizr/modernizr.js"></script>
+	<script src="jquery.particleground.js"></script>
+	<!--  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+	  <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>-->
+
+  <!-- endbuild -->
 </head>
 <body>
 <div class="container">
@@ -24,12 +35,12 @@
 
     <nav class="nav" id="main-nav">
       <ul class="menu">
-        <li><a href="#">Exchange</a></li>
-        <li><a href="#">Buy &amp; Sell</a></li>
-        <li><a href="#">Affiliate Program</a></li>
-        <li><a href="#">Support &amp; Help</a></li>
-        <li class="mobile"><a href="#">Authorization</a></li>
-        <li class="mobile"><a href="#">Registration</a></li>
+        <li><a href="#">Кошелек</a></li>
+        <li><a href="#">Торги</a></li>
+        <li><a href="#">Реферальная программа</a></li>
+        <li><a href="#">Поддержка</a></li>
+        <li class="mobile"><a href="#">Авторизация</a></li>
+        <li class="mobile"><a href="#">Регистрация</a></li>
       </ul>
     </nav>
 
@@ -73,21 +84,21 @@
 
 		  <div class="row header-title-wrap">
 			  <div class="header-title">
-				  Secure
+				  Безопасная
 			  </div>
 
 			  <div class="header-subtitle">
-				  Cryptocurrency Exchange
+				  Криптовалютная Биржа
 			  </div>
 		  </div>
 
 		  <div class="row header-reg-wrap">
 			  <form action="#" class="header-reg">
 				  <div class="row header-group-btns">
-					  <input type="text" class="header-reg-input" placeholder="YOUR EMAIL" id="header-reg-input">
+					  <input type="text" class="header-reg-input" placeholder="Введите ваш имейл" id="header-reg-input">
 
 
-					  <button href="#" class="header-reg-btn">Create an account</button>
+					  <button href="#" class="header-reg-btn">Зарегестрироваться</button>
 
 					  <!--<div class="header-reg-checkbox">
 						  <input class="magic-checkbox" type="checkbox" name="layout" id="agree-text" value="option" checked>
@@ -137,19 +148,19 @@
 		  <div class="row info-wrap">
 			  <div class="col span4-xs info-item">
 				  <div class="info-item-wrap">
-					  <div class="info-text">bitcoin change</div>
+					  <div class="info-text">Курс биткоина</div>
 					  <div class="info-value">+27.58%</div>
 				  </div>
 			  </div>
 			  <div class="col span4-xs info-item">
 				  <div class="info-item-wrap">
-					  <div class="info-text">24H Volume</div>
+					  <div class="info-text">Объем торгов</div>
 					  <div class="info-value">5360.98 BTC</div>
 				  </div>
 			  </div>
 			  <div class="col span4-xs info-item">
 				  <div class="info-item-wrap">
-					  <div class="info-text">active traders</div>
+					  <div class="info-text">Активные трейдеры</div>
 					  <div class="info-value">48,002</div>
 				  </div>
 			  </div>
@@ -225,7 +236,7 @@
     <div class="row section_inner">
       <div class="row graph-wrap">
         <div class="row block-title" id="block-title">
-          Bitcoin price chart
+			График стоимости Bitcoin
         </div>
         <div class="row graph-buttons-wrap">
           <div class="col span12-xs span6-s graph-buttons-1">
@@ -244,10 +255,10 @@
           </div>
 
           <div class="col span12-xs span5-sm span12-s graph-buttons-3">
-            <button class="graph-btn graph-time active">D</button>
-            <button class="graph-btn graph-time">W</button>
-            <button class="graph-btn graph-time">M</button>
-            <button class="graph-btn graph-time">Y</button>
+            <button class="graph-btn graph-time active">Д</button>
+            <button class="graph-btn graph-time">Н</button>
+            <button class="graph-btn graph-time">М</button>
+            <button class="graph-btn graph-time">Г</button>
           </div>
 
         </div>
@@ -262,10 +273,9 @@
   <div class="row accept-wrap">
     <div class="row section_inner">
       <div class="row accept">
-        <div class="row accept-title">Accept Bitcoin Payments and Expand Your Business</div>
+        <div class="row accept-title">Пользоваться Bitcoin еще никогда не было так просто</div>
         <div class="row accept-text">
-          Getting started with Bitcoin payments is quite easy. Even one of the huge retailers, TigerDirect, did it in only four days, although they are a billion-dollar enterprise.
-          If they can do it that quick, you can manage to get it up and running in your business too.
+			Огромные корпорации, такие как Microsoft®, Virgin Galactic®, Dell®, Steam®, Tesla®, Zynga®, Bloomberg® и Skycraft Airplanes® используют Биткойн. Присоединяйтесь к тем, кто уже использует биткойн для бизнеса.
         </div>
         <div class="accept-link-wrap">
           <a href="#" class="accept-link">На страницу торгов</a>
@@ -279,18 +289,17 @@
   <div class="row reasons">
     <div class="row section_inner">
       <div class="row block-title">
-        Six reasons to choose EXMO
+		  Преимущества EXMO
       </div>
       <div class="row reasons-wrap">
 
         <div class="col span6-sm span4 reason-1">
           <div class="reason-item comission anim-icon-up">
             <div class="reason-item-title">
-              Lowest Comissions
+				Выгодные комиссии
             </div>
             <div class="reason-item-text">
-              Profitable cryptocurrency investment
-              opportunity
+				Прибыльные инвестиционные возможности для работы криптовалютами
             </div>
           </div>
         </div>
@@ -298,10 +307,10 @@
         <div class="col span6-sm span4 reason-2">
           <div class="reason-item secure anim-icon-up">
             <div class="reason-item-title">
-              Secure Wallets
+				Безопасные кошельки
             </div>
             <div class="reason-item-text">
-              Store your digital assets in user wallets
+				Храните ваши цифровые активы в пользовательских кошельках
             </div>
           </div>
         </div>
@@ -309,11 +318,10 @@
         <div class="col span6-sm span4 reason-3">
           <div class="reason-item algorithmic anim-icon-up">
             <div class="reason-item-title">
-              Algorithmic trading
+				Алгоритмическая торговля
             </div>
             <div class="reason-item-text">
-              API for cross-platform trading robots
-              available
+				API для кросс-платформенных торговых роботов
             </div>
           </div>
         </div>
@@ -321,11 +329,10 @@
         <div class="col span6-sm span4 reason-4">
           <div class="reason-item payment anim-icon-up">
             <div class="reason-item-title">
-              Payment options
+				Варианты зачислений
             </div>
             <div class="reason-item-text">
-              More than 10 methods for depositing an
-              account
+				Более 10 способов пополнения счета
             </div>
           </div>
         </div>
@@ -333,11 +340,10 @@
         <div class="col span6-sm span4 reason-5">
           <div class="reason-item support anim-icon-up">
             <div class="reason-item-title">
-              Support 24/7
+				Поддержка 24/7
             </div>
             <div class="reason-item-text">
-              Profitable cryptocurrency investment
-              opportunity
+				Мгновенная, дружелюбная и всегда готовая помочь
             </div>
           </div>
         </div>
@@ -345,10 +351,10 @@
         <div class="col span6-sm span4 reason-6">
           <div class="reason-item service anim-icon-up">
             <div class="reason-item-title">
-              Fast service
+				Скорость сервиса
             </div>
             <div class="reason-item-text">
-              Highest transactions speed with one click
+				Максимальная скорость транзакций в один клик
             </div>
           </div>
         </div>
@@ -360,7 +366,7 @@
   <div class="row reviews">
     <div class="row section_inner">
 
-      <div class="row block-title">Bitcoin Influencers about EXMO</div>
+      <div class="row block-title">Отзывы про EXMO</div>
 
       <div class="owl-carousel reviews-carousel">
 
@@ -473,7 +479,7 @@
 			<div class="row reg-count-wrap">
 
 				<div class="row reg-count-title counter-value">634,567</div>
-				<div class="row reg-count-subtitle">people trust in over 200 countries</div>
+				<div class="row reg-count-subtitle">людей доверяют в более чем 200 странах</div>
 			</div>
 		</div>
 	</div>
@@ -481,7 +487,7 @@
 
   <div class="row section_inner">
     <div class="row blog">
-      <div class="block-title">Read EXMO blog</div>
+      <div class="block-title">Новости EXMO</div>
       <div class="row blog-body">
         <div class="col blog-post desktop-1200">
             <div class="row blog-post-title">
@@ -500,7 +506,7 @@
           </div>
           
           <div class="row">
-            <a href="#" class="blog-post-btn">Read full article</a>
+            <a href="#" class="blog-post-btn">Читать новость целиком</a>
           </div> 
         </div>
 
@@ -536,7 +542,7 @@
           </div>
 
           <div class="row blog-read-more-wrap">
-            <a href="#" class="blog-read-more">Read more</a>
+            <a href="#" class="blog-read-more">Читать</a>
           </div>
 
 
@@ -550,12 +556,12 @@
     <div class="row section_inner">
       <div class="row content-account-wrap">
         <div class="row account-title">
-          Just open account. For free.<br>
-          And start trading Bitcoins now.
+			Бесплатная учетная необходима<br>
+			чтобы начать торговать биткойнами!
         </div>
 
         <div class="row account-btn">
-          <button class="btn_create">Get started</button>
+          <button class="btn_create">Создать учетную запись</button>
         </div>
       </div>
 
@@ -593,10 +599,10 @@
         <div class="col span7-sm footer-head-block-2">
           <div class="footer_head_text">
             <div class="footer_head_text_1">
-              <span class="white_text">48,002</span> <span class="gray_text">Exmo members</span>
+              <span class="white_text">48,002</span> <span class="gray_text">Подписчиков</span>
             </div>
             <div class="footer_head_text_2">
-              <span class="white_text">14782 BTC</span> <span class="gray_text">volume size</span>
+              <span class="white_text">14782 BTC</span> <span class="gray_text">объем торгов</span>
             </div>
           </div>
         </div>
@@ -608,10 +614,10 @@
           <div class="row footer_menu_title" id="soc-med">Подписывайтесь на нас</div>
           <div class="row soc_med" id="soc-med-list">
             <ul class="soc_med_list">
-              <li><a href="https://t.me/exmo_com" class="soc_med_tel">Telegram Channel<br>600 members</a></li>
-              <li><a href="#" class="soc_med_tw">Twitter<br>1,002 followers</a></li>
-              <li><a href="#" class="soc_med_fb">Facebook<br>3,405 with us</a></li>
-              <li><a href="#" class="soc_med_vk">VK<br>27,084 members join</a></li>
+              <li><a href="https://t.me/exmo_com" class="soc_med_tel">Telegram<br>600 подписчиков</a></li>
+              <li><a href="#" class="soc_med_tw">Twitter<br>1,002 подписчиков</a></li>
+              <li><a href="#" class="soc_med_fb">Facebook<br>3,405 подписчиков</a></li>
+              <li><a href="#" class="soc_med_vk">VK<br>27,084 подписчиков</a></li>
             </ul>
           </div>
 
@@ -687,9 +693,16 @@
 
 </div>
 
-<script src="scripts/vendor.js"></script>
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="/bower_components/jquery/dist/jquery.js"></script>
+<script src="/bower_components/modernizr/modernizr.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
 
+<!-- build:js scripts/main.js -->
 <script src="scripts/main.js"></script>
+<!-- endbuild -->
 <script>
     $(document).ready(function($) {
         $('.counter-value').counterUp({
